@@ -1,0 +1,42 @@
+.benefits-block {
+  &__container {
+
+  }
+
+  .section-header {
+    margin-bottom: 45px;
+    // .section-header__title
+    &__title {
+    }
+  }
+}
+
+.benefits-card {
+  padding: 22px 32px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+
+  // .benefits-card__pic
+  &__pic {
+    margin-top: -49px;
+    text-align: center;
+
+    margin-bottom: 9px;
+  }
+
+  // .benefits-card__text
+  &__text {
+    color: #000;
+
+    h3 {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 6px;
+    }
+
+    p {
+      font-size: 12px;
+      text-align: center;
+    }
+  }
+}

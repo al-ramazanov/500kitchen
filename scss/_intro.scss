@@ -1,0 +1,46 @@
+//intro start
+.intro {
+  color: #fff;
+  margin-bottom: 70px;
+  // .intro__container
+  &__container {
+    background: url("@images/intro-bg.jpg") center no-repeat;
+    min-height: 531px;
+    display: flex;
+    align-items: center;
+  }
+
+  // .intro__text
+  &__text {
+    padding-left: 58px;
+    @media screen and (max-width: 768px) {
+      padding-left: 0;
+    }
+  }
+
+  // .intro__title
+  &__title {
+    font-size: 48px;
+    margin-bottom: 22px;
+  }
+
+  // .intro__subtitle
+  &__subtitle {
+    font-size: 20px;
+    margin-bottom: 44px;
+  }
+
+  // .intro__link
+  &__link {
+    border-radius: 5px;
+    padding: 14px 69px;
+    width: 197px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color);
+  }
+}
+
+//intro start end

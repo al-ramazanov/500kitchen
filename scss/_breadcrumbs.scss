@@ -1,0 +1,35 @@
+.breadcrumbs {
+  padding: 30px 0;
+  @media screen and (max-width: 768px) {
+    padding: 20px 0;
+  }
+  // .breadcrumbs__list
+  &__list {
+    display: flex;
+  }
+
+  // .breadcrumbs__item
+  &__item {
+    font-size: 10px;
+    color: #949494;
+
+    &:not(:last-child) {
+      &::after {
+        content: "/";
+        display: inline-block;
+        margin: 0 3px;
+      }
+    }
+  }
+
+  // .breadcrumbs__link
+  &__link {
+    text-transform: uppercase;
+    color: #949494;
+
+    &.home {
+      text-decoration: underline;
+    }
+
+  }
+}

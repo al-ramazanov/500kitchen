@@ -1,0 +1,135 @@
+.article {
+  // .article__container
+  &__container {
+  }
+
+  .section-header {
+    &__title {
+      text-transform: initial;
+    }
+  }
+
+  // .article__header
+  &__header {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 15px;
+  }
+
+  // .article__header-btn
+  &__header-btn {
+    font-size: 14px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 7px 17px;
+    background-color: var(--accent-color);
+  }
+
+  // .article__info
+  &__info {
+    margin-bottom: 18px;
+  }
+
+  // .article__info-share
+
+  &__info-share {
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    padding: 7px 17px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+    white-space: nowrap;
+
+    svg {
+      width: 14px;
+      height: 14px;
+      fill: #353535;
+      -webkit-transition: .3s ease;
+      -moz-transition: .3s ease;
+      -ms-transition: .3s ease;
+      -o-transition: .3s ease;
+      transition: .3s ease;
+      flex: 0 0 auto;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        border-color: var(--accent-color);
+        color: var(--accent-color);
+
+        svg {
+          fill: var(--accent-color)
+        }
+      }
+    }
+  }
+
+  // .article__info-date
+  &__info-date {
+    font-size: 12px;
+    color: #949494;
+  }
+
+  // .article__text
+  &__text {
+    color: #353535;
+
+    > * {
+      &:not(:last-child) {
+        margin-bottom: 27px;
+        @media screen and (max-width: 768px) {
+          margin-bottom: 18px;
+        }
+      }
+    }
+
+    h2 {
+      font-size: 24px;
+      @media screen and (max-width: 576px) {
+        font-size: 20px;
+      }
+    }
+
+    h3 {
+      font-size: 20px;
+      @media screen and (max-width: 576px) {
+        font-size: 17px;
+      }
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    img {
+      max-width: 100%
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  .blog-card__views {
+    margin-right: 57px;
+    @media screen and (max-width: 768px) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.container {
+}
+

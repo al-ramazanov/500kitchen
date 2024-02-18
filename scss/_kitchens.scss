@@ -1,0 +1,54 @@
+//kitchens start
+.kitchens {
+  // .kitchens__container
+  &__container {
+  }
+
+  &__header {
+    margin-bottom: 35px;
+    align-items: center;
+  }
+
+  .section-header__title {
+    white-space: nowrap;
+    @media screen and (max-width: 320px) {
+      white-space: normal;
+    }
+  }
+
+  .section-header {
+    @media screen and (max-width: 992px) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.kitchens-action {
+  display: flex;
+  gap: 15px;
+  overflow: auto;
+  @media screen and (min-width: 992px) {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  // .kitchens-action__btn
+  &__btn {
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    padding: 7px 17px;
+    background-color: #fff;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+
+    &.active {
+      background-color: #e5e5e5;
+      border-color: #e5e5e5;
+    }
+  }
+}
+
+//kitchens end

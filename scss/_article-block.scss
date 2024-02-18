@@ -1,0 +1,46 @@
+.article-block {
+  // .article-block__container
+  &__container {
+  }
+
+  // .article-block__text
+  &__text {
+  }
+
+  // .article-block__pic
+  &__pic {
+    float: right;
+    margin-top: -73px;
+    position: relative;
+    @media screen and (max-width: 1199.98px) {
+      margin-top: 0;
+      float: initial;
+    }
+
+    img {
+      max-width: 100%
+    }
+  }
+
+  // .article-block__decor
+  &__decor {
+    position: absolute;
+    top: 0;
+    left: -70px;
+    @media screen and (max-width: 1199.98px) {
+      left: initial;
+    }
+    @media screen and (max-width: 768px) {
+      position: static;
+      display: block;
+    }
+  }
+
+  .section-header {
+    margin-bottom: 23px;
+    // .section-header__title
+    &__title {
+    }
+  }
+}
+

@@ -1,0 +1,131 @@
+.catalog-block {
+  // .catalog-block__container
+  &__container {
+  }
+
+  // .catalog-block__item
+  &__item {
+  }
+
+  // .catalog-block__card
+  &__card {
+  }
+
+  .section-header {
+    margin-bottom: 23px;
+    // .section-header__title
+    &__title {
+    }
+  }
+}
+
+.catalog-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+  // .catalog-card__pic
+  &__pic {
+    margin-bottom: 15px;
+
+    img {
+      max-width: 100%
+    }
+  }
+
+
+  // .catalog-card__text
+  &__text {
+    h3 {
+      font-size: 18px;
+      color: #000;
+      margin-bottom: 10px;
+    }
+  }
+
+  // .catalog-card__list
+  &__list {
+  }
+
+  // .catalog-card__link
+  &__link {
+    line-height: 1.57;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+    @media (any-hover: hover) {
+      &:hover {
+        opacity: .7;
+      }
+    }
+
+    &:before {
+      content: "";
+      width: 12px;
+      height: 12px;
+    }
+
+    &.beige {
+      &::before {
+        content: "";
+        display: inline-block;
+        background: #ffc69c;
+      }
+    }
+
+    &.white {
+      &:before {
+        border: 1px solid #cdcdcd;
+
+        background-color: #fff;
+      }
+    }
+
+    &.wenge {
+      &:before {
+        background: #562814;
+      }
+    }
+
+    &.gray {
+      &:before {
+        background: #d9d9d9;
+      }
+    }
+  }
+
+  // .catalog-card__more
+  &__more {
+    margin-top: auto;
+    font-size: 12px;
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    img {
+      -webkit-transition: .3s ease;
+      -moz-transition: .3s ease;
+      -ms-transition: .3s ease;
+      -o-transition: .3s ease;
+      transition: .3s ease;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        img {
+          transform: translateX(10px);
+        }
+      }
+    }
+  }
+}
+

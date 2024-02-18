@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20240219012814" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap&_v=20240219012814" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css?_v=20240219012814">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240219012814">
+
+</head>
+
+<body>
+    <div class="wrapper">
+<header class="header">
+	<div class="header-top">
+		<div class="header-top__container">
+			<a href="/" class="header-top__logo">
+				<img src="images/logo.svg" alt="logo">
+			</a>
+			<form class="header-top__search">
+				<label class="header-top__label">
+					<button class="header-top__search-btn" type="submit">
+						<svg>
+							<use xlink:href='images/svg/sprite.svg#search-ico'></use>
+						</svg>
+					</button>
+					<input type="search" class="header-top__search-input" placeholder="Поиск">
+				</label>
+			</form>
+			<button type="button" class="header-top__btn designer replace-item-js" title="Вызвать дизайнера">
+				<svg>
+					<use xlink:href="images/svg/sprite.svg#design"></use>
+				</svg>
+				Вызвать дизайнера
+			</button>
+			<button type="button" class="header-top__btn calculate replace-item-js" title="Калькулятор">
+				<svg>
+					<use xlink:href="images/svg/sprite.svg#calculator"></use>
+				</svg>
+				Калькулятор
+			</button>
+			<button type="button" class="header-top__btn favorite replace-item-js" title="Избранное">
+				<svg>
+					<use xlink:href="images/svg/sprite.svg#star"></use>
+				</svg>
+				Избранное
+			</button>
+			<div class="header-top__contacts replace-item-js">
+				<a href="tel:+79879889987" class="header-top__tel">+7 987 98 89 987</a>
+				<a href="https://yandex.ru/maps/-/CDBfAC0v" class="header-top__address">Москва, ул.Пушкина, 2</a>
+			</div>
+			<button class="burger-btn">
+				<span class="burger-btn__line"></span>
+			</button>
+		</div>
+
+	</div>
+	<div class="header-bottom">
+		<div class="header-bottom__container">
+			<button class="header-bottom__btn kitchen hover-opacity replace-item-js">
+				<svg>
+					<use xlink:href='images/svg/sprite.svg#down-ico'></use>
+				</svg>
+				Кухни
+			</button>
+			<nav class="header-bottom__nav">
+				<ul class="header-bottom__list">
+					<li class="header-bottom__item header-bottom__action hidden">
+
+					</li>
+					<li class="header-bottom__item">
+						<a href="#" class="header-bottom__link hover-opacity">
+							все для кухонь
+						</a>
+					</li>
+					<li class="header-bottom__item">
+						<a href="#" class="header-bottom__link hover-opacity">
+							о компании
+						</a>
+					</li>
+					<li class="header-bottom__item">
+						<a href="#" class="header-bottom__link hover-opacity">
+							покупателю
+						</a>
+					</li>
+					<li class="header-bottom__item">
+						<a href="#" class="header-bottom__link hover-opacity">
+							акции
+						</a>
+					</li>
+					<li class="header-bottom__item">
+						<a href="#" class="header-bottom__link hover-opacity">
+							блог
+						</a>
+					</li>
+					<li class="header-bottom__item">
+						<a href="#" class="header-bottom__link hover-opacity">
+							контакты
+						</a>
+					</li>
+					<li class="header-bottom__item hidden replace-target-js">
+
+					</li>
+				</ul>
+			</nav>
+			<button class="header-bottom__btn measurement hover-opacity replace-item-js">
+				<svg>
+					<use xlink:href="images/svg/sprite.svg#measuring"></use>
+				</svg>
+				Заказать замер
+			</button>
+		</div>
+	</div>
+</header>
+<main class="catalog section-mb">
+	<div class="catalog__container container">
+		<div class="breadcrumbs">
+			<ul class="breadcrumbs__list">
+				<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link home">Главная</a></li>
+				<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Все кухни</a></li>
+			</ul>
+		</div>
+		<div class="row">
+			<div class="col-3">
+				<div class="section-header">
+					<h2 class="section-header__title">
+						Кухонные гарнитуры
+					</h2>
+				</div>
+				<div class="catalog-category">
+					<ul class="catalog-category__list">
+						<li class="catalog-category__item">
+							<a href="#" class="catalog-category__btn">
+								Прямые
+							</a>
+						</li>
+						<li class="catalog-category__item">
+							<a href="#" class="catalog-category__btn">
+								Угловые
+							</a>
+						</li>
+						<li class="catalog-category__item">
+							<a href="#" class="catalog-category__btn">
+								МДФ
+							</a>
+						</li>
+						<li class="catalog-category__item">
+							<a href="#" class="catalog-category__btn">
+								Пластик
+							</a>
+						</li>
+						<li class="catalog-category__item">
+							<a href="#" class="catalog-category__btn">
+								Современные
+							</a>
+						</li>
+						<li class="catalog-category__item">
+							<a href="#" class="catalog-category__btn">
+								Лофт
+							</a>
+						</li>
+						<li class="catalog-category__item">
+							<a href="#" class="catalog-category__btn">
+								Классические
+							</a>
+						</li>
+						<li class="catalog-category__item">
+							<a href="#" class="catalog-category__btn">
+								Кантри
+							</a>
+						</li>
+						<li class="catalog-category__item">
+							<a href="#" class="catalog-category__btn more">
+								Показать ещё...
+							</a>
+						</li>
+					</ul>
+				</div>
+				<aside class="aside-menu filter">
+					<div class="catalog-select">
+						<h3 class="catalog-select__title">
+							Материал фасадов
+						</h3>
+						<div class="catalog-dropdown">
+							<button type="button" class="catalog-dropdown__btn">
+								<span>Не выбрано</span>
+								<svg>
+									<use xlink:href="images/svg/sprite.svg#dropdown-ico"></use>
+								</svg>
+							</button>
+							<ul class="catalog-dropdown__list">
+								<li class="catalog-dropdown__item">
+									<a href="#" class="catalog-dropdown__link">
+										Lorem ipsum
+									</a>
+								</li>
+								<li class="catalog-dropdown__item">
+									<a href="#" class="catalog-dropdown__link">
+										Lorem ipsum
+									</a>
+								</li>
+								<li class="catalog-dropdown__item">
+									<a href="#" class="catalog-dropdown__link">
+										Lorem ipsum
+									</a>
+								</li>
+								<li class="catalog-dropdown__item">
+									<a href="#" class="catalog-dropdown__link">
+										Lorem ipsum
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="catalog-select">
+						<h3 class="catalog-select__title">
+							Форма
+						</h3>
+						<div class="catalog-dropdown">
+							<button type="button" class="catalog-dropdown__btn">
+								<span>Не выбрано</span>
+								<svg>
+									<use xlink:href="images/svg/sprite.svg#dropdown-ico"></use>
+								</svg>
+							</button>
+							<ul class="catalog-dropdown__list">
+								<li class="catalog-dropdown__item">
+									<a href="#" class="catalog-dropdown__link">
+										Lorem ipsum
+									</a>
+								</li>
+								<li class="catalog-dropdown__item">
+									<a href="#" class="catalog-dropdown__link">
+										Lorem ipsum
+									</a>
+								</li>
+								<li class="catalog-dropdown__item">
+									<a href="#" class="catalog-dropdown__link">
+										Lorem ipsum
+									</a>
+								</li>
+								<li class="catalog-dropdown__item">
+									<a href="#" class="catalog-dropdown__link">
+										Lorem ipsum
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="catalog-select">
+						<h3 class="catalog-select__title">
+							Тип
+						</h3>
+						<div class="catalog-dropdown">
+							<button type="button" class="catalog-dropdown__btn">
+								<span>Не выбрано</span>
+								<svg>
+									<use xlink:href="images/svg/sprite.svg#dropdown-ico"></use>
+								</svg>
+							</button>
+							<ul class="catalog-dropdown__list">
+								<li class="catalog-dropdown__item">
+									<a href="#" class="catalog-dropdown__link">
+										Lorem ipsum
+									</a>
+								</li>
+								<li class="catalog-dropdown__item">
+									<a href="#" class="catalog-dropdown__link">
+										Lorem ipsum
+									</a>
+								</li>
+								<li class="catalog-dropdown__item">
+									<a href="#" class="catalog-dropdown__link">
+										Lorem ipsum
+									</a>
+								</li>
+								<li class="catalog-dropdown__item">
+									<a href="#" class="catalog-dropdown__link">
+										Lorem ipsum
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="catalog-select">
+						<h3 class="catalog-select__title">
+							Стиль
+						</h3>
+						<div class="catalog-dropdown">
+							<button type="button" class="catalog-dropdown__btn">
+								<span>Не выбрано</span>
+								<svg>
+									<use xlink:href="images/svg/sprite.svg#dropdown-ico"></use>
+								</svg>
+							</button>
+							<ul class="catalog-dropdown__list">
+								<li class="catalog-dropdown__item">
+									<a href="#" class="catalog-dropdown__link">
+										Lorem ipsum
+									</a>
+								</li>
+								<li class="catalog-dropdown__item">
+									<a href="#" class="catalog-dropdown__link">
+										Lorem ipsum
+									</a>
+								</li>
+								<li class="catalog-dropdown__item">
+									<a href="#" class="catalog-dropdown__link">
+										Lorem ipsum
+									</a>
+								</li>
+								<li class="catalog-dropdown__item">
+									<a href="#" class="catalog-dropdown__link">
+										Lorem ipsum
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="catalog-select">
+						<h3 class="catalog-select__title">
+							Цвет
+						</h3>
+						<div class="catalog-dropdown">
+							<button type="button" class="catalog-dropdown__btn">
+								<span>Не выбрано</span>
+								<svg>
+									<use xlink:href="images/svg/sprite.svg#dropdown-ico"></use>
+								</svg>
+							</button>
+							<ul class="catalog-dropdown__list">
+								<li class="catalog-dropdown__item">
+									<a href="#" class="catalog-dropdown__link">
+										Lorem ipsum
+									</a>
+								</li>
+								<li class="catalog-dropdown__item">
+									<a href="#" class="catalog-dropdown__link">
+										Lorem ipsum
+									</a>
+								</li>
+								<li class="catalog-dropdown__item">
+									<a href="#" class="catalog-dropdown__link">
+										Lorem ipsum
+									</a>
+								</li>
+								<li class="catalog-dropdown__item">
+									<a href="#" class="catalog-dropdown__link">
+										Lorem ipsum
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="catalog-select">
+						<h3 class="catalog-select__title">
+							Размер
+						</h3>
+						<div class="catalog-dropdown">
+							<button type="button" class="catalog-dropdown__btn">
+								<span>Не выбрано</span>
+								<svg>
+									<use xlink:href="images/svg/sprite.svg#dropdown-ico"></use>
+								</svg>
+							</button>
+							<ul class="catalog-dropdown__list">
+								<li class="catalog-dropdown__item">
+									<a href="#" class="catalog-dropdown__link">
+										Lorem ipsum
+									</a>
+								</li>
+								<li class="catalog-dropdown__item">
+									<a href="#" class="catalog-dropdown__link">
+										Lorem ipsum
+									</a>
+								</li>
+								<li class="catalog-dropdown__item">
+									<a href="#" class="catalog-dropdown__link">
+										Lorem ipsum
+									</a>
+								</li>
+								<li class="catalog-dropdown__item">
+									<a href="#" class="catalog-dropdown__link">
+										Lorem ipsum
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="filter__btns">
+						<button class="filter__btn submit hover-opacity">
+							Применить
+						</button>
+						<button class="filter__btn reset">
+							Сбросить
+						</button>
+					</div>
+				</aside>
+			</div>
+			<div class="col-9">
+				<div class="product-list row">
+					<div class="col-lg-4 col-md-6 col-6"><div class="product-card">
+	<button class="product-card__favorite">
+		<svg>
+			<use xlink:href="images/svg/sprite.svg#star-ico"></use>
+		</svg>
+	</button>
+	<span class="product-card"></span>
+	<div class="product-card__img">
+		<img src="images/product-pic.jpg" alt="product">
+	</div>
+	<ul class="product-card__info">
+		<li><p class="product-card__name">Кухня “Альфа-77”</p></li>
+		<li>
+			<div class="product-card__differences">
+				<h3>Сравните цену в разных материалах</h3>
+				<div class="product-card__btns">
+					<label class="product-card__label">
+						<input type="radio" name="type" value="ПВХ" class="product-card__input">
+						<a type="button" class="product-card__check">
+							ПВХ
+						</a>
+					</label>
+					<label class="product-card__label">
+						<input type="radio" name="type" value="Пластик" class="product-card__input">
+						<a type="button" class="product-card__check">
+							Пластик
+						</a>
+					</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="product-card__price">
+				<div class="product-card__price-item">
+					<span>Цена от:</span>
+					<p>150 000 руб.</p>
+				</div>
+				<div class="product-card__price-item">
+					<span>Пог. метр от:</span>
+					<p>60 000 руб.</p>
+				</div>
+			</div>
+		</li>
+		<li class="product-card__hidden">
+			<div class="product-card__order-wrapper">
+				<button class="product-card__order hover-opacity">
+					Рассчитать стоимость
+				</button>
+			</div>
+		</li>
+	</ul>
+</div></div>
+					<div class="col-lg-4 col-md-6 col-6"><div class="product-card">
+	<button class="product-card__favorite">
+		<svg>
+			<use xlink:href="images/svg/sprite.svg#star-ico"></use>
+		</svg>
+	</button>
+	<span class="product-card"></span>
+	<div class="product-card__img">
+		<img src="images/product-pic.jpg" alt="product">
+	</div>
+	<ul class="product-card__info">
+		<li><p class="product-card__name">Кухня “Альфа-77”</p></li>
+		<li>
+			<div class="product-card__differences">
+				<h3>Сравните цену в разных материалах</h3>
+				<div class="product-card__btns">
+					<label class="product-card__label">
+						<input type="radio" name="type" value="ПВХ" class="product-card__input">
+						<a type="button" class="product-card__check">
+							ПВХ
+						</a>
+					</label>
+					<label class="product-card__label">
+						<input type="radio" name="type" value="Пластик" class="product-card__input">
+						<a type="button" class="product-card__check">
+							Пластик
+						</a>
+					</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="product-card__price">
+				<div class="product-card__price-item">
+					<span>Цена от:</span>
+					<p>150 000 руб.</p>
+				</div>
+				<div class="product-card__price-item">
+					<span>Пог. метр от:</span>
+					<p>60 000 руб.</p>
+				</div>
+			</div>
+		</li>
+		<li class="product-card__hidden">
+			<div class="product-card__order-wrapper">
+				<button class="product-card__order hover-opacity">
+					Рассчитать стоимость
+				</button>
+			</div>
+		</li>
+	</ul>
+</div></div>
+					<div class="col-lg-4 col-md-6 col-6"><div class="product-card">
+	<button class="product-card__favorite">
+		<svg>
+			<use xlink:href="images/svg/sprite.svg#star-ico"></use>
+		</svg>
+	</button>
+	<span class="product-card"></span>
+	<div class="product-card__img">
+		<img src="images/product-pic.jpg" alt="product">
+	</div>
+	<ul class="product-card__info">
+		<li><p class="product-card__name">Кухня “Альфа-77”</p></li>
+		<li>
+			<div class="product-card__differences">
+				<h3>Сравните цену в разных материалах</h3>
+				<div class="product-card__btns">
+					<label class="product-card__label">
+						<input type="radio" name="type" value="ПВХ" class="product-card__input">
+						<a type="button" class="product-card__check">
+							ПВХ
+						</a>
+					</label>
+					<label class="product-card__label">
+						<input type="radio" name="type" value="Пластик" class="product-card__input">
+						<a type="button" class="product-card__check">
+							Пластик
+						</a>
+					</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="product-card__price">
+				<div class="product-card__price-item">
+					<span>Цена от:</span>
+					<p>150 000 руб.</p>
+				</div>
+				<div class="product-card__price-item">
+					<span>Пог. метр от:</span>
+					<p>60 000 руб.</p>
+				</div>
+			</div>
+		</li>
+		<li class="product-card__hidden">
+			<div class="product-card__order-wrapper">
+				<button class="product-card__order hover-opacity">
+					Рассчитать стоимость
+				</button>
+			</div>
+		</li>
+	</ul>
+</div></div>
+					<div class="col-lg-4 col-md-6 col-6"><div class="product-card">
+	<button class="product-card__favorite">
+		<svg>
+			<use xlink:href="images/svg/sprite.svg#star-ico"></use>
+		</svg>
+	</button>
+	<span class="product-card"></span>
+	<div class="product-card__img">
+		<img src="images/product-pic.jpg" alt="product">
+	</div>
+	<ul class="product-card__info">
+		<li><p class="product-card__name">Кухня “Альфа-77”</p></li>
+		<li>
+			<div class="product-card__differences">
+				<h3>Сравните цену в разных материалах</h3>
+				<div class="product-card__btns">
+					<label class="product-card__label">
+						<input type="radio" name="type" value="ПВХ" class="product-card__input">
+						<a type="button" class="product-card__check">
+							ПВХ
+						</a>
+					</label>
+					<label class="product-card__label">
+						<input type="radio" name="type" value="Пластик" class="product-card__input">
+						<a type="button" class="product-card__check">
+							Пластик
+						</a>
+					</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="product-card__price">
+				<div class="product-card__price-item">
+					<span>Цена от:</span>
+					<p>150 000 руб.</p>
+				</div>
+				<div class="product-card__price-item">
+					<span>Пог. метр от:</span>
+					<p>60 000 руб.</p>
+				</div>
+			</div>
+		</li>
+		<li class="product-card__hidden">
+			<div class="product-card__order-wrapper">
+				<button class="product-card__order hover-opacity">
+					Рассчитать стоимость
+				</button>
+			</div>
+		</li>
+	</ul>
+</div></div>
+					<div class="col-lg-4 col-md-6 col-6"><div class="product-card">
+	<button class="product-card__favorite">
+		<svg>
+			<use xlink:href="images/svg/sprite.svg#star-ico"></use>
+		</svg>
+	</button>
+	<span class="product-card"></span>
+	<div class="product-card__img">
+		<img src="images/product-pic.jpg" alt="product">
+	</div>
+	<ul class="product-card__info">
+		<li><p class="product-card__name">Кухня “Альфа-77”</p></li>
+		<li>
+			<div class="product-card__differences">
+				<h3>Сравните цену в разных материалах</h3>
+				<div class="product-card__btns">
+					<label class="product-card__label">
+						<input type="radio" name="type" value="ПВХ" class="product-card__input">
+						<a type="button" class="product-card__check">
+							ПВХ
+						</a>
+					</label>
+					<label class="product-card__label">
+						<input type="radio" name="type" value="Пластик" class="product-card__input">
+						<a type="button" class="product-card__check">
+							Пластик
+						</a>
+					</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="product-card__price">
+				<div class="product-card__price-item">
+					<span>Цена от:</span>
+					<p>150 000 руб.</p>
+				</div>
+				<div class="product-card__price-item">
+					<span>Пог. метр от:</span>
+					<p>60 000 руб.</p>
+				</div>
+			</div>
+		</li>
+		<li class="product-card__hidden">
+			<div class="product-card__order-wrapper">
+				<button class="product-card__order hover-opacity">
+					Рассчитать стоимость
+				</button>
+			</div>
+		</li>
+	</ul>
+</div></div>
+					<div class="col-lg-4 col-md-6 col-6"><div class="product-card">
+	<button class="product-card__favorite">
+		<svg>
+			<use xlink:href="images/svg/sprite.svg#star-ico"></use>
+		</svg>
+	</button>
+	<span class="product-card"></span>
+	<div class="product-card__img">
+		<img src="images/product-pic.jpg" alt="product">
+	</div>
+	<ul class="product-card__info">
+		<li><p class="product-card__name">Кухня “Альфа-77”</p></li>
+		<li>
+			<div class="product-card__differences">
+				<h3>Сравните цену в разных материалах</h3>
+				<div class="product-card__btns">
+					<label class="product-card__label">
+						<input type="radio" name="type" value="ПВХ" class="product-card__input">
+						<a type="button" class="product-card__check">
+							ПВХ
+						</a>
+					</label>
+					<label class="product-card__label">
+						<input type="radio" name="type" value="Пластик" class="product-card__input">
+						<a type="button" class="product-card__check">
+							Пластик
+						</a>
+					</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="product-card__price">
+				<div class="product-card__price-item">
+					<span>Цена от:</span>
+					<p>150 000 руб.</p>
+				</div>
+				<div class="product-card__price-item">
+					<span>Пог. метр от:</span>
+					<p>60 000 руб.</p>
+				</div>
+			</div>
+		</li>
+		<li class="product-card__hidden">
+			<div class="product-card__order-wrapper">
+				<button class="product-card__order hover-opacity">
+					Рассчитать стоимость
+				</button>
+			</div>
+		</li>
+	</ul>
+</div></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="pagination">
+	<div class="pagination__more-wrapper">
+		<button class="pagination__more">
+			Показать ещё
+			<!--				<img src="images/restart.svg" alt="#">-->
+			<svg>
+				<use xlink:href="images/svg/sprite.svg#restart"></use>
+			</svg>
+		</button>
+	</div>
+	<ul class="pagination__list">
+		<li class="pagination__item">
+			<a href="#" class="pagination__btn active">
+				1
+			</a>
+		</li>
+		<li class="pagination__item">
+			<a href="#" class="pagination__btn">
+				2
+			</a>
+		</li>
+		<li class="pagination__item">
+			<a href="#" class="pagination__btn">
+				3
+			</a>
+		</li>
+		<li class="pagination__item">
+			<a href="#" class="pagination__btn">
+				4
+			</a>
+		</li>
+		<li class="pagination__item">
+			<a href="#" class="pagination__btn">
+				>
+			</a>
+		</li>
+		<li class="pagination__item">
+			<a href="#" class="pagination__btn">
+				>|
+			</a>
+		</li>
+	</ul>
+</div>
+		</div>
+	</div>
+	<form class="calculator">
+		<div class="calculator__container container">
+			<div class="section-header">
+				<h2 class="section-header__title">
+					Онлайн-расчет стоимости кухни
+				</h2>
+			</div>
+			<div class="row calculator__items">
+				<div class="col-md-4">
+					<div class="calculator__item">
+						<h3 class="calculator__item-title">
+							Выберите форму Вашей кухни
+						</h3>
+						<div class="calculator__cards">
+							<label class="calculator-card__label">
+								<input type="radio" class="calculator__radio" name="форма кухни" checked>
+								<div class="calculator-card">
+									<div class="calculator-card__img">
+										<img src="images/calculator-pic-1.png" alt="#">
+										<p>А</p>
+									</div>
+									<p class="calculator-card__text">
+										Прямая
+									</p>
+								</div>
+							</label>
+							<label class="calculator-card__label">
+								<input type="radio" class="calculator__radio" name="форма кухни">
+								<div class="calculator-card">
+									<div class="calculator-card__img">
+										<img src="images/calculator-pic-2.png" alt="#">
+									</div>
+									<p class="calculator-card__text">
+										П - образная
+									</p>
+								</div>
+							</label>
+							<label class="calculator-card__label">
+								<input type="radio" class="calculator__radio" name="форма кухни">
+								<div class="calculator-card">
+									<div class="calculator-card__img">
+										<img src="images/calculator-pic-3.png" alt="#">
+									</div>
+									<p class="calculator-card__text">
+										Г - образная (левая)
+									</p>
+								</div>
+							</label>
+							<label class="calculator-card__label">
+								<input type="radio" class="calculator__radio" name="форма кухни">
+								<div class="calculator-card">
+									<div class="calculator-card__img">
+										<img src="images/calculator-pic-4.png" alt="#">
+									</div>
+									<p class="calculator-card__text">
+										Г - образная (правая)
+									</p>
+								</div>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-8 calculator__item">
+					<div class="row gy-3">
+						<div class="col-xl-6">
+							<label class="calculator__label">
+								<h3 class="calculator__label-header">
+									Длина стороны A (см)
+								</h3>
+								<input type="text" class="calculator__input" placeholder="Введите значение">
+							</label>
+						</div>
+						<div class="col-xl-6">
+							<label class="calculator__label">
+								<h3 class="calculator__label-header">
+									Материал фасадов
+								</h3>
+								<input type="text" class="calculator__input" placeholder="Пластик">
+							</label>
+						</div>
+						<div class="col-xl-6">
+							<label class="calculator__label">
+								<h3 class="calculator__label-header">
+									Длина стороны B (см)
+								</h3>
+								<input type="text" class="calculator__input" placeholder="Введите значение">
+							</label>
+						</div>
+						<div class="col-xl-6">
+							<label class="calculator__label">
+								<h3 class="calculator__label-header">
+									Столешница
+								</h3>
+								<input type="text" class="calculator__input" placeholder="ЛДСП">
+							</label>
+						</div>
+						<div class="col-xl-6">
+							<label class="calculator__label">
+								<h3 class="calculator__label-header">
+									Длина стороны С (см)
+								</h3>
+								<input type="text" class="calculator__input" placeholder="Введите значение">
+							</label>
+						</div>
+						<div class="calculator__action">
+							<div class="calculator__price">
+								Приблизительная стоимость Вашей кухни:
+								<span class="calculator__price-count">150 000 руб.</span>
+							</div>
+							<button class="calculator__btn hover-opacity">
+								Точный рассчет
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+	<div class="ceo-text">
+		<div class="ceo-text__container">
+			<h2 class="ceo-text__title">Lorem ipsum dolor sit amet</h2>
+			<p>
+				Lorem ipsum dolor sit amet consectetur. Viverra cursus quis in elit quisque. Semper arcu libero lobortis augue
+				imperdiet pellentesque purus vulputate. Egestas pellentesque imperdiet aliquet accumsan. Euismod eu ipsum amet
+				sed.
+				Nec risus enim viverra magna vitae volutpat viverra suspendisse lacus. Fringilla aenean aliquam in ut sit nullam
+				nunc eleifend urna. Eget varius elementum tellus viverra. Odio tempus non dolor augue proin dapibus. Ornare
+				molestie id erat eleifend quisque iaculis. Elementum in massa integer vel ut. Elementum ultricies ut tincidunt
+				vel netus. Morbi faucibus eu varius eget nec sed iaculis suscipit sem. Quis sapien augue ipsum aliquet nullam
+				posuere suscipit. Urna orci vel at a nunc consectetur.
+				Nibh sapien non enim lectus consectetur feugiat pellentesque condimentum est. Elit cursus duis aliquet augue
+				diam iaculis dignissim. Eros pharetra potenti leo dolor eros lacus. Mi commodo eget eget neque morbi et sodales
+				eget potenti. Sed nibh id ornare euismod morbi netus nulla curabitur velit. Venenatis ac rhoncus in
+				pellentesque. Dignissim accumsan sed eu vulputate. Mauris sed elementum condimentum lacus amet in adipiscing
+				viverra molestie. In volutpat sapien id nullam nisl vitae amet aliquet magna.
+				Blandit placerat faucibus bibendum suspendisse tempus sed et pulvinar viverra. Placerat sed massa urna ipsum
+				faucibus gravida auctor. Nunc congue aliquam varius tortor justo purus tincidunt. Auctor feugiat molestie nulla
+				justo. Aenean enim nunc eget nibh vestibulum sit turpis nunc. Dictum adipiscing facilisi sed netus sociis arcu
+				sagittis orci. Nibh nisl natoque dictum nulla convallis cras egestas quis urna. Morbi aliquet in arcu aenean
+				bibendum nibh praesent. Quis in et lorem vulputate sit pellentesque sit donec. Massa vel ultricies feugiat
+				ullamcorper dolor ipsum nullam cursus neque. Faucibus nunc pharetra adipiscing ac. Dui mauris sit ut praesent
+				scelerisque viverra orci magnis mauris. Viverra sit etiam facilisi urna lobortis non non massa. Metus vulputate
+				sed donec mauris. Vulputate molestie placerat potenti tempus aliquet ipsum.
+				Imperdiet auctor lectus dictum turpis. Lacus proin sit est ut in. Pretium fames lacus et mattis tortor ipsum
+				odio purus. Pellentesque habitant phasellus fermentum vulputate morbi. A leo fermentum sem arcu bibendum
+				consectetur aliquam. Dictum aenean ipsum orci pulvinar. Eget commodo etiam sagittis scelerisque non et. Cras
+				cursus in in eget.
+				Phasellus egestas egestas aliquam lacus eu varius. Ultrices odio facilisi nunc at pretium feugiat et varius
+				ultrices. Diam condimentum tellus nunc eget et urna. Augue pretium risus nec tempus molestie quisque arcu.
+				Pharetra magna est tincidunt vitae non leo auctor eget. Tempor etiam rhoncus gravida cursus felis tempus. Arcu
+				ipsum ipsum eget turpis. Vel pulvinar morbi vestibulum at egestas vitae sed. Id cursus urna feugiat tristique
+				facilisis nec accumsan velit ligula. Pretium varius est et enim proin a placerat iaculis vulputate. Id urna
+				vestibulum euismod in nulla varius ut sed mi. Non nulla sit imperdiet proin suspendisse ullamcorper tortor nulla
+				tristique. Viverra scelerisque quam diam elit egestas. Donec diam accumsan sit vitae aliquet massa a. Ac tortor
+				lacinia fermentum adipiscing nulla purus vitae quam.
+				Vitae ultricies lacus egestas gravida lorem aliquet sapien. Sagittis ridiculus tempor non consectetur consequat.
+				Nibh arcu vitae malesuada velit ultrices mauris nulla duis. Pulvinar quam feugiat varius nec purus. Platea
+				volutpat mi volutpat ut. Sit interdum in ultrices.
+			</p></div>
+	</div>
+</main>
+<footer class="footer">
+	<div class="footer__container container">
+		<div class="row gy-3 gy-xl-0">
+			<div class="col-md-6 col-lg-4 col-xl-3">
+				<div class="footer__column">
+					<a href="index.html" class="footer__logo"><img src="images/footer-logo.svg" alt="logo"></a>
+					<p class="footer__subtitle">
+						Вы сможете заказать недорогие классические кухни для хрущевок и других малогабаритных квартир или же
+						кухонные гарнитуры в стиле модерн для воссоздания современного яркого интерьера по недорогим ценам, и в
+						короткие сроки получить изготовленную нами мебель. Только самые лучшие, с легкостью выдерживающие
+						конкуренцию с европейскими, дизайны!
+					</p>
+					<form class="footer__subscribe">
+						<p>Подпишитесь на нашу рассылку и получайте информацию о новых продуктах, акциях и событиях.</p>
+						<label>
+							<input type="email" placeholder="Ваш e-mail">
+							<button class="footer__subscribe-btn hover-opacity">
+								<img src="images/mail.svg" alt="#">
+								Подписаться
+							</button>
+						</label>
+					</form>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4 col-xl-3">
+				<div class="footer__column">
+					<h3 class="footer__column-header">
+						КАТАЛОГ ПРОДУКЦИИ
+					</h3>
+					<ul class="footer__list">
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">
+								Классические
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">
+								Пластик
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">
+								Прямые
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">
+								Угловые
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4 col-xl-3">
+				<div class="footer__column">
+					<h3 class="footer__column-header">
+						ПОЛЕЗНАЯ ИНФОРМАЦИЯ
+					</h3>
+					<ul class="footer__list">
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">
+								Дизайн-замер
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">
+								Оплата
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">
+								Доставка
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">
+								Сборка
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">
+								Наши сертификаты
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">
+								История компании
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">
+								Наша команда
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">
+								Карта сайта
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4 col-xl-3">
+				<div class="footer__column">
+					<h3 class="footer__column-header">
+						НАШИ КОНТАКТЫ
+					</h3>
+					<ul class="footer__contact-list">
+						<li>
+							<a href="#" class="footer__contact-link">
+								<img src="images/geo.svg" alt="geo">
+								<p>
+									<span>Офис продаж</span>
+									г. Москва, Рязанский проспект, 10 стр.18 БЦ Хамелеон
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="tel:+74993981814" class="footer__contact-link">
+								<img src="images/phone.svg" alt="geo">
+								<p><span>Телефон</span>
+									+7 (499) 398-18-14</p>
+							</a>
+						</li>
+						<li>
+							<a href="tel:+74993981814" class="footer__contact-link">
+								<img src="images/phone.svg" alt="geo">
+								<p><span>E-mail</span>
+									info@500kuhon.ru</p>
+							</a>
+						</li>
+						<li class="d-flex gap-3">
+							<a href="#">
+								<img src="images/vk.svg" alt="vk">
+							</a>
+							<a href="#">
+								<img src="images/telegram.svg" alt="telegram">
+							</a>
+							<a href="#">
+								<img src="images/instagram.svg" alt="instagram">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</div>
+ <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20240219012814"></script>
+<script src="js/script.min.js?_v=20240219012814"></script>
+<script src="js/main.js?_v=20240219012814"></script>
+</body>
+
+</html>

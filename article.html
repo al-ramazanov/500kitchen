@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20240219012814" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap&_v=20240219012814" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css?_v=20240219012814">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240219012814">
+
+</head>
+
+<body>
+    <div class="wrapper">
+<header class="header">
+	<div class="header-top">
+		<div class="header-top__container">
+			<a href="/" class="header-top__logo">
+				<img src="images/logo.svg" alt="logo">
+			</a>
+			<form class="header-top__search">
+				<label class="header-top__label">
+					<button class="header-top__search-btn" type="submit">
+						<svg>
+							<use xlink:href='images/svg/sprite.svg#search-ico'></use>
+						</svg>
+					</button>
+					<input type="search" class="header-top__search-input" placeholder="Поиск">
+				</label>
+			</form>
+			<button type="button" class="header-top__btn designer replace-item-js" title="Вызвать дизайнера">
+				<svg>
+					<use xlink:href="images/svg/sprite.svg#design"></use>
+				</svg>
+				Вызвать дизайнера
+			</button>
+			<button type="button" class="header-top__btn calculate replace-item-js" title="Калькулятор">
+				<svg>
+					<use xlink:href="images/svg/sprite.svg#calculator"></use>
+				</svg>
+				Калькулятор
+			</button>
+			<button type="button" class="header-top__btn favorite replace-item-js" title="Избранное">
+				<svg>
+					<use xlink:href="images/svg/sprite.svg#star"></use>
+				</svg>
+				Избранное
+			</button>
+			<div class="header-top__contacts replace-item-js">
+				<a href="tel:+79879889987" class="header-top__tel">+7 987 98 89 987</a>
+				<a href="https://yandex.ru/maps/-/CDBfAC0v" class="header-top__address">Москва, ул.Пушкина, 2</a>
+			</div>
+			<button class="burger-btn">
+				<span class="burger-btn__line"></span>
+			</button>
+		</div>
+
+	</div>
+	<div class="header-bottom">
+		<div class="header-bottom__container">
+			<button class="header-bottom__btn kitchen hover-opacity replace-item-js">
+				<svg>
+					<use xlink:href='images/svg/sprite.svg#down-ico'></use>
+				</svg>
+				Кухни
+			</button>
+			<nav class="header-bottom__nav">
+				<ul class="header-bottom__list">
+					<li class="header-bottom__item header-bottom__action hidden">
+
+					</li>
+					<li class="header-bottom__item">
+						<a href="#" class="header-bottom__link hover-opacity">
+							все для кухонь
+						</a>
+					</li>
+					<li class="header-bottom__item">
+						<a href="#" class="header-bottom__link hover-opacity">
+							о компании
+						</a>
+					</li>
+					<li class="header-bottom__item">
+						<a href="#" class="header-bottom__link hover-opacity">
+							покупателю
+						</a>
+					</li>
+					<li class="header-bottom__item">
+						<a href="#" class="header-bottom__link hover-opacity">
+							акции
+						</a>
+					</li>
+					<li class="header-bottom__item">
+						<a href="#" class="header-bottom__link hover-opacity">
+							блог
+						</a>
+					</li>
+					<li class="header-bottom__item">
+						<a href="#" class="header-bottom__link hover-opacity">
+							контакты
+						</a>
+					</li>
+					<li class="header-bottom__item hidden replace-target-js">
+
+					</li>
+				</ul>
+			</nav>
+			<button class="header-bottom__btn measurement hover-opacity replace-item-js">
+				<svg>
+					<use xlink:href="images/svg/sprite.svg#measuring"></use>
+				</svg>
+				Заказать замер
+			</button>
+		</div>
+	</div>
+</header>
+<main class="article section-mb">
+	<div class="article__container container">
+		<div class="breadcrumbs">
+			<ul class="breadcrumbs__list">
+				<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link home">Главная</a></li>
+				<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">БЛОГ</a></li>
+				<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Статья</a></li>
+			</ul>
+		</div>
+		<div class="article__header">
+			<div class="section-header">
+				<h2 class="section-header__title">
+					Дизайн кухни 2024-2025: модные идеи и тренды
+				</h2>
+			</div>
+			<button class="article__header-btn hover-opacity">
+				Советы
+			</button>
+		</div>
+		<div class="article__info row gy-3 gy-sm-0">
+			<div class="col col-xs-6 d-flex align-items-center">
+				<div class="article__info-date">
+					18.01.2023
+				</div>
+			</div>
+			<div class="col col-lg-6 col-xs-6 col-md-5 d-flex">
+				<div class="blog-card__views">
+					<img src="images/eye.svg" alt="#">
+					<span class="blog-card__views-counter">30979</span>
+				</div>
+				<button type="button" class="blog-card__rate">
+					<img src="images/like.svg" alt="#">
+					<span class="blog-card__rate-counter">5</span>
+				</button>
+			</div>
+			<div class="col col-lg-3 col-md-4">
+				<a href="#" class="article__info-share">
+					<svg>
+						<use xlink:href="images/svg/sprite.svg#share"></use>
+					</svg>
+					Поделиться в соцсетях
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-lg-6">
+				<div class="article__text">
+					<img src="images/article-1.jpg" alt="#">
+					<p>
+						Современный дизайн кухни — это элегантное сочетание простоты и практичности. Излишества и кричащие цвета
+						уступили место приглушенным оттенкам, благородной матовой фактуре и минималистичным решениям. Рассказываем,
+						как без труда выбрать модную кухню среди разнообразия стилей и материалов.
+					</p>
+
+					<h2>Какие стили актуальны в 2024 году</h2>
+					<p>
+						Современный дизайн кухни сочетает в себе внешний лаконизм и продуманную эргономику. В моде изящная простота,
+						прямые тонкие линии, лаконичные акценты. Мебельные композиции, в которых присутствуют эти элементы,
+						получаются элегантными и удобными, и выбрать подходящую кухню не составит труда. В 2024 году на пике трендов
+						следующие стили: современный, неоклассический, скандинавский и минимализм.
+					</p>
+					<h3>
+						Современный стиль: сдержанность и практичность
+					</h3>
+					<p>
+						<a href="#">Современный стиль</a> не признает четких стилевых рамок. Это уникальное новое интерьерное
+						течение, которое
+						позволяет проектировать не похожие друг на друга, очень функциональные интерьеры. Он объединяет в себе черты
+						самых разных направлений: минимализма, сканди, лофта, хай-тека, неоклассики. От каждого из своих
+						предшественников современный стиль в 2024 году взял лучшее, чтобы помочь создать уютный, красивый интерьер
+						для комфорта и расслабления.
+						Отличительная особенность современного стиля в том, что он идеально подходит для создания гармоничного
+						интерьера как в крохотных студиях, так и в просторных кухнях-гостиных и апартаментах свободной планировки.
+						Проектируя кухню в современном стиле, легко создавать компактные сеты для небольших помещений. А если
+						площадь помещения большая, интерьер может быть расширен и дополнен барной стойкой или островом, обеденной
+						зоной, уголком для работы и диваном для отдыха.
+					</p>
+					<img src="images/article-2.jpg" alt="#">
+					<img src="images/article-3.jpg" alt="#">
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+<footer class="footer">
+	<div class="footer__container container">
+		<div class="row gy-3 gy-xl-0">
+			<div class="col-md-6 col-lg-4 col-xl-3">
+				<div class="footer__column">
+					<a href="index.html" class="footer__logo"><img src="images/footer-logo.svg" alt="logo"></a>
+					<p class="footer__subtitle">
+						Вы сможете заказать недорогие классические кухни для хрущевок и других малогабаритных квартир или же
+						кухонные гарнитуры в стиле модерн для воссоздания современного яркого интерьера по недорогим ценам, и в
+						короткие сроки получить изготовленную нами мебель. Только самые лучшие, с легкостью выдерживающие
+						конкуренцию с европейскими, дизайны!
+					</p>
+					<form class="footer__subscribe">
+						<p>Подпишитесь на нашу рассылку и получайте информацию о новых продуктах, акциях и событиях.</p>
+						<label>
+							<input type="email" placeholder="Ваш e-mail">
+							<button class="footer__subscribe-btn hover-opacity">
+								<img src="images/mail.svg" alt="#">
+								Подписаться
+							</button>
+						</label>
+					</form>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4 col-xl-3">
+				<div class="footer__column">
+					<h3 class="footer__column-header">
+						КАТАЛОГ ПРОДУКЦИИ
+					</h3>
+					<ul class="footer__list">
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">
+								Классические
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">
+								Пластик
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">
+								Прямые
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">
+								Угловые
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4 col-xl-3">
+				<div class="footer__column">
+					<h3 class="footer__column-header">
+						ПОЛЕЗНАЯ ИНФОРМАЦИЯ
+					</h3>
+					<ul class="footer__list">
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">
+								Дизайн-замер
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">
+								Оплата
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">
+								Доставка
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">
+								Сборка
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">
+								Наши сертификаты
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">
+								История компании
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">
+								Наша команда
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">
+								Карта сайта
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4 col-xl-3">
+				<div class="footer__column">
+					<h3 class="footer__column-header">
+						НАШИ КОНТАКТЫ
+					</h3>
+					<ul class="footer__contact-list">
+						<li>
+							<a href="#" class="footer__contact-link">
+								<img src="images/geo.svg" alt="geo">
+								<p>
+									<span>Офис продаж</span>
+									г. Москва, Рязанский проспект, 10 стр.18 БЦ Хамелеон
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="tel:+74993981814" class="footer__contact-link">
+								<img src="images/phone.svg" alt="geo">
+								<p><span>Телефон</span>
+									+7 (499) 398-18-14</p>
+							</a>
+						</li>
+						<li>
+							<a href="tel:+74993981814" class="footer__contact-link">
+								<img src="images/phone.svg" alt="geo">
+								<p><span>E-mail</span>
+									info@500kuhon.ru</p>
+							</a>
+						</li>
+						<li class="d-flex gap-3">
+							<a href="#">
+								<img src="images/vk.svg" alt="vk">
+							</a>
+							<a href="#">
+								<img src="images/telegram.svg" alt="telegram">
+							</a>
+							<a href="#">
+								<img src="images/instagram.svg" alt="instagram">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</div>
+ <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20240219012814"></script>
+<script src="js/script.min.js?_v=20240219012814"></script>
+<script src="js/main.js?_v=20240219012814"></script>
+</body>
+
+</html>
