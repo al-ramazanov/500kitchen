@@ -15,6 +15,15 @@ document.addEventListener("DOMContentLoaded", (e) => {
         menu.classList.add('active')
         document.body.style.overflow = 'hidden'
       })
+
+      const menuClose = document.querySelector('.menu-close')
+      if (menuClose) {
+        menuClose.addEventListener('click', e => {
+          menu.classList.remove('active')
+          document.body.style.overflow = null
+          e.preventDefault()
+        })
+      }
       document.addEventListener("click", e => {
         if (e.target == menu) {
           menu.classList.remove('active')
@@ -244,5 +253,22 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
     });
 //  ===================swipers
+
+
+    const slider = document.getElementById('slider');
+
+    noUiSlider.create(slider, {
+      start: [0, 80],
+      connect: true,
+      padding: 0,
+      tooltips: true,
+      range: {
+        'min': 0,
+        'max': 30000
+      },
+    });
+
   }
 )
+
+
