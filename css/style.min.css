@@ -832,7 +832,6 @@ input[type=search]::-webkit-search-results-decoration {
 
 .intro {
   color: #fff;
-  margin-bottom: 70px;
 }
 
 .intro__container {
@@ -2861,6 +2860,10 @@ input[type=search]::-webkit-search-results-decoration {
 }
 
 @media screen and (max-width: 768px) {
+  .main {
+    margin-top: 10px;
+  }
+
   .section-mb {
     margin-bottom: 30px;
   }
@@ -2883,6 +2886,10 @@ input[type=search]::-webkit-search-results-decoration {
 
   .intro__text {
     padding-left: 0;
+  }
+
+  .intro__title {
+    font-size: 32px;
   }
 
   .calculator__cards {
