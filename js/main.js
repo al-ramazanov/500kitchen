@@ -176,27 +176,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
   cardTabs()
 
-  // const popup1 = document.querySelector('#measuring')
-  // const popup2 = document.querySelector('#designer')
-  // const popup3 = document.querySelector('#calculate')
-  //
-  // popup1.addEventListener('click', e => {
-  //   const popup = document.querySelector('.popup-measuring')
-  //   popup.classList.add('active')
-  //   e.preventDefault()
-  // })
-  // popup2.addEventListener('click', e => {
-  //   const popup = document.querySelector('.popup-calculator')
-  //   popup.classList.add('active')
-  //   e.preventDefault()
-  // })
-  // popup3.addEventListener('click', e => {
-  //   const popup = document.querySelector('.popup-designer')
-  //   popup.classList.add('active')
-  //   e.preventDefault()
-  // })
-
-
   const modalBtn = document.querySelectorAll('[data-modal]')
   if (modalBtn) {
     for (const btn of modalBtn) {
@@ -208,9 +187,12 @@ document.addEventListener("DOMContentLoaded", (e) => {
           const closeModal = modal.querySelector('.popup-close')
           modal.classList.add('active')
           modalContent.classList.add('active')
+          document.body.style.overflow = 'hidden'
+
           closeModal.addEventListener('click', e => {
             modal.classList.remove('active')
             modalContent.classList.remove('active')
+            document.body.style.overflow = null;
           })
         }
         e.preventDefault()
