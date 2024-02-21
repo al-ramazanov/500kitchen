@@ -140,7 +140,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .recomended {
-  h2 {
+  &__title {
     font-size: 24px;
     color: #353535;
     margin-bottom: 36px;
@@ -211,6 +211,7 @@ input[type="search"]::-webkit-search-results-decoration {
 @import "article.scss";
 @import "catalog.scss";
 @import "card.scss";
+@import "popups.scss";
 @import "footer.scss";
 
 

@@ -1,3 +1,4 @@
+//catalog start
 .catalog {
   // .catalog__container
   &__container {
@@ -56,6 +57,10 @@
         border-color: var(--accent-color);
         color: var(--accent-color);
       }
+    }
+
+    &.active {
+      background-color: #e5e5e5;
     }
 
     &.more {
@@ -141,7 +146,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    padding: 10px 9px 10px 20px;
+    padding: 8px 9px 8px 20px;
     font-size: 12px;
     color: #949494;
     background-color: #fff;
@@ -152,22 +157,30 @@
       width: 12px;
       height: 10px;
       fill: var(--accent-color);
+      transition: .2s linear;
+    }
+
+    &.active {
+      svg {
+        transform: rotateX(180deg);
+      }
     }
   }
 
   // .catalog-dropdown__list
 
   &__list {
-    background-color: #efefef;
-    //position: absolute;
+    background-color: #fff;
+    position: absolute;
     top: 100%;
     left: 0;
+    width: 100%;
     border-radius: 5px;
     max-height: 0;
     overflow: hidden;
     will-change: max-height;
 
-    transition: 1s linear;
+    transition: .2s linear;
   }
 
   // .catalog-dropdown__item
@@ -182,8 +195,88 @@
   }
 }
 
-.submit {
+.catalog-sort {
+  display: flex;
+  align-items: center;
+  margin-bottom: 17px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: clamp(15px, 15%, 15%);
+
+  // .catalog-sort__item
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
+
+  // .catalog-sort__text
+  &__text {
+    font-size: 14px;
+    color: #000;
+  }
+
+  // .catalog-sort__btn
+  &__btn {
+    width: 178px;
+    font-size: 14px;
+    text-align: left;
+    border: 1px solid #e5e5e5;
+    padding: 7px 17px;
+    border-radius: 5px;
+  }
+
+  // .catalog-sort__list
+  &__list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    border-radius: 5px;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &.active {
+      z-index: 3;
+      overflow-y: scroll;
+      background-color: #fff;
+      max-height: 200px;
+      transition: .3s linear;
+
+
+      &::-webkit-scrollbar {
+        width: 4px;
+      }
+    }
+
+  }
+
+  // .catalog-sort__link
+  &__link {
+    padding: 5px 17px;
+    display: block;
+    font-size: 14px;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--accent-color)
+      }
+    }
+  }
+
+  &__dropdown {
+    position: relative;
+  }
 }
 
-.col-9 {
-}
+//catalog end

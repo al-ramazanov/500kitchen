@@ -6,6 +6,9 @@
   .col-8 {
     min-height: 0;
   }
+
+  .recomended {
+  }
 }
 
 .card-sliders {
@@ -237,12 +240,16 @@
 
 
 .card-tabs {
+
+
   // .card-tabs__list
   &__list {
     display: flex;
     align-items: center;
     gap: 20px;
     overflow-x: auto;
+    margin-top: 32px;
+    margin-bottom: 23px;
   }
 
   // .card-tabs__item
@@ -268,38 +275,116 @@
 }
 
 .card-specification {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+
   // .card-specification__warning
   &__warning {
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 23px;
   }
 
   // .card-specification__wrapper
   &__wrapper {
+    gap: 70px;
+    @media screen and (max-width: 768px) {
+      gap: 20px;
+    }
   }
 
   // .card-specification__list
   &__list {
+
   }
 
   // .card-specification__item
   &__item {
+    display: flex;
+    gap: 19px;
+
+    h6 {
+      font-size: 14px;
+      color: #949494;
+      min-width: 117px;
+    }
+
+    p {
+      align-self: flex-end;
+      font-size: 14px;
+      color: #000;
+    }
   }
 
   // .card-specification__description
   &__description {
+    font-size: 14px;
+    color: #000;
   }
 }
 
-.row {
+.kitchen-set {
+  // .kitchen-set__card
+  &__card {
+  }
+
+  .section-header {
+    margin-bottom: 23px;
+    // .section-header__title
+    &__title {
+    }
+  }
 }
 
-.d-flex {
+
+.set-card {
+  display: flex;
+  gap: 20px;
+  @media screen and (max-width: 425px) {
+    display: block;
+  }
+  // .set-card__pic
+  &__pic {
+    flex: 0 0 auto;
+    @media screen and (max-width: 425px) {
+      width: 100px;
+      height: 100px;
+      overflow: hidden;
+    }
+
+    img {
+      max-width: 100%
+    }
+  }
+
+  // .set-card__text
+  &__text {
+    color: #353535;
+
+    padding-top: 20px;
+  }
+
+  // .set-card__title
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  // .set-card__subtitle
+  &__subtitle {
+    font-size: 14px;
+  }
 }
 
-.col-xl-4 {
-}
-
-.col-xl-1 {
-}
-
-.col-xl-7 {
+.kitchen-install {
+  .section-header {
+    margin-bottom: 23px;
+    // .section-header__title
+    &__title {
+    }
+  }
 }

@@ -67,14 +67,10 @@
       }
     }
 
-    &:before {
-      content: "";
-      width: 12px;
-      height: 12px;
-    }
-
     &.beige {
       &::before {
+        width: 12px;
+        height: 12px;
         content: "";
         display: inline-block;
         background: #ffc69c;
@@ -83,6 +79,9 @@
 
     &.white {
       &:before {
+        content: "";
+        width: 12px;
+        height: 12px;
         border: 1px solid #cdcdcd;
 
         background-color: #fff;
@@ -91,12 +90,18 @@
 
     &.wenge {
       &:before {
+        content: "";
+        width: 12px;
+        height: 12px;
         background: #562814;
       }
     }
 
     &.gray {
       &:before {
+        content: "";
+        width: 12px;
+        height: 12px;
         background: #d9d9d9;
       }
     }
