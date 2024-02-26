@@ -94,6 +94,9 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .main {
   margin-top: 73px;
+  @media screen and (max-width: 768px) {
+    margin-top: 10px;
+  }
 }
 
 .section-mb {
@@ -194,6 +197,7 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 }
 
+@import "noui.scss";
 @import "header.scss";
 @import "intro.scss";
 @import "benefits.scss";
@@ -213,6 +217,42 @@ input[type="search"]::-webkit-search-results-decoration {
 @import "card.scss";
 @import "popups.scss";
 @import "footer.scss";
+
+.noUi-horizontal {
+  height: 2px;
+}
+
+.noUi-connect {
+  height: 4px;
+  background-color: var(--accent-color);
+}
+
+.noUi-base {
+  background-color: #949494;
+  height: 1px;
+}
+
+.noUi-horizontal .noUi-tooltip {
+  bottom: initial;
+  top: 120%;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent-color);
+  opacity: 1;
+  border-radius: 50%;
+  border: none;
+  top: -4px;
+  box-shadow: none;
+  cursor: pointer;
+
+  &:before,
+  &:after {
+    display: none;
+  }
+}
 
 
 

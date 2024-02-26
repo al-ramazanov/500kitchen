@@ -306,8 +306,31 @@
     }
   }
 
+  .close-btn__wrapper {
+    justify-content: flex-end;
+    display: none;
+    @media screen and (max-width: 992px) {
+      display: flex;
+    }
+  }
+
+  .menu-close {
+    position: relative;
+    z-index: 2;
+    margin-top: 10px;
+    margin-right: 10px;
+
+    svg {
+      width: 30px;
+      height: 30px;
+      fill: none;
+      stroke: #000;
+    }
+  }
+
   // .header-bottom__list
   &__list {
+    position: relative;
     display: flex;
     align-items: center;
     @media screen and (max-width: 992px) {

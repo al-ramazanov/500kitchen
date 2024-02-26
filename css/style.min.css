@@ -3014,6 +3014,12 @@ input[type=search]::-webkit-search-results-decoration {
   }
 }
 
+@media screen and (max-width: 576.98px) {
+  .product-card__img img {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .article__text h2 {
     font-size: 20px;

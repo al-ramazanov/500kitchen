@@ -1,7 +1,6 @@
 //intro start
 .intro {
   color: #fff;
-  margin-bottom: 70px;
   // .intro__container
   &__container {
     background: url("@images/intro-bg.jpg") center no-repeat;
@@ -22,6 +21,9 @@
   &__title {
     font-size: 48px;
     margin-bottom: 22px;
+    @media screen and (max-width: 768px) {
+      font-size: 32px;
+    }
   }
 
   // .intro__subtitle
